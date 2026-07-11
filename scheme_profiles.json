@@ -1,0 +1,288 @@
+{
+    "ayushman_bharat": {
+    "scheme_name": "Ayushman Bharat - Pradhan Mantri Jan Arogya Yojana (PM-JAY)",
+    "description": "Provides cashless and paperless health insurance coverage of up to ₹5,00,000 per family per year for secondary and tertiary hospitalization to poor, vulnerable, and entitled families.",
+    "eligibility_triggers": {
+      "location": ["rural", "urban"],
+      "rural_deprivation_criteria": [
+        "only one room with kucha walls and kucha roof",
+        "no adult member between ages 16 to 59",
+        "households with no adult male member between ages 16 to 59",
+        "disabled member and no able-bodied adult member",
+        "sc or st households",
+        "landless households deriving a major part of their income from manual casual labour"
+      ],
+      "automatic_inclusion_criteria": [
+        "households without shelter",
+        "destitute or living on alms",
+        "manual scavenger families",
+        "primitive tribal groups",
+        "legally released bonded labour"
+      ],
+      "urban_occupational_categories": [
+        "ragpicker",
+        "beggar",
+        "domestic worker",
+        "street vendor",
+        "cobbler",
+        "hawker",
+        "other service provider working on streets",
+        "construction worker",
+        "plumber",
+        "mason",
+        "labour",
+        "painter",
+        "welder",
+        "security guard",
+        "coolie",
+        "other head load worker",
+        "sweeper",
+        "sanitation worker",
+        "mali",
+        "home based worker",
+        "artisan",
+        "handicrafts worker",
+        "tailor",
+        "transport worker",
+        "driver",
+        "conductor",
+        "helper to drivers and conductors",
+        "cart puller",
+        "rickshaw puller",
+        "shop worker",
+        "assistant",
+        "peon in small establishment",
+        "helper",
+        "delivery assistant",
+        "attendant",
+        "waiter",
+        "electrician",
+        "mechanic",
+        "assembler",
+        "repair worker",
+        "washer man",
+        "chowkidar"
+      ]
+    },
+    "exclusion_triggers": {
+      "vehicles_owned": ["two wheeler", "three wheeler", "four wheeler", "motorized fishing boat"],
+      "equipment_owned": ["mechanized farming equipment"],
+      "kisan_credit_card_limit_above": 50000,
+      "employment": ["government employee", "government managed non agricultural enterprises worker"],
+      "income_limit_monthly_above": 10000,
+      "assets_owned": ["refrigerator", "landline"],
+      "housing_type": ["decent solidly built houses"],
+      "agricultural_land_acres_above": 5
+    }
+  },
+  "ddu_gky": {
+    "scheme_name": "Deen Dayal Upadhyaya Grameen Kaushalya Yojana (DDU-GKY)",
+    "description": "A placement-linked skill training program targeted at rural poor youth to equip them with industry-relevant skills and secure sustainable employment with regular monthly wages.",
+    "eligibility_triggers": {
+      "location": ["rural"],
+      "standard_age_range": {
+        "min": 15,
+        "max": 35
+      },
+      "extended_age_range_special_groups": {
+        "min": 15,
+        "max": 45
+      },
+      "special_groups_eligible_for_extended_age": [
+        "women",
+        "particularly vulnerable tribal groups",
+        "persons with disabilities",
+        "transgender",
+        "rehabilitated bonded labor",
+        "victims of trafficking",
+        "manual scavengers",
+        "hiv positive persons"
+      ],
+      "poverty_identification_methods": [
+        "below poverty line list",
+        "participatory identification of poor"
+      ],
+      "alternative_eligibility_criteria_any_one": [
+        "youth from mgnrega worker households with at least 15 days of work in the previous financial year",
+        "youth from a household with an active rsby card mentioning their details",
+        "youth from households issued antyodaya anna yojana or bpl pds cards",
+        "youth from a household where a family member is a member of an nrlm self help group",
+        "youth from a household covered under socio economic caste census auto inclusion parameters"
+      ],
+      "funding_and_beneficiary_reservations": {
+        "sc_and_st_national_funds_earmarked": "50%",
+        "minority_groups_funds_set_aside": "15%",
+        "state_minimum_reservation_persons_with_disabilities": "3%"
+      }
+    },
+    "exclusion_triggers": {
+      "location_exclusion": "urban area residents",
+      "age_exclusion": "anyone outside the 15-35 bracket unless they qualify under the special group extended age limit up to 45"
+    }
+  },
+
+  "mgnrega": {
+    "scheme_name": "Mahatma Gandhi National Rural Employment Guarantee Act (MGNREGA)",
+    "description": "An employment scheme guaranteeing at least 100 days of wage employment in a financial year to every rural household whose adult members volunteer to do unskilled manual work.",
+    "eligibility_triggers": {
+      "location": ["rural"],
+      "age_minimum": 18,
+      "employment_type": ["unskilled manual work"],
+      "vulnerable_groups_special_provisions": [
+        "persons with disabilities",
+        "primitive tribal groups",
+        "nomadic tribal groups",
+        "denotified tribes",
+        "women in special circumstances",
+        "senior citizens above 65 years of age",
+        "hiv positive persons",
+        "internally displaced persons",
+        "rehabilitated bonded labour"
+      ]
+    },
+    "exclusion_triggers": {
+      "location_exclusion": "districts that have a hundred percent urban population"
+    }
+  },
+  "nsap_ignoaps": {
+    "scheme_name": "Indira Gandhi National Old Age Pension Scheme (IGNOAPS - NSAP)",
+    "description": "A centrally sponsored social assistance scheme that provides a monthly pension to senior citizens belonging to Below Poverty Line (BPL) households.",
+    "eligibility_triggers": {
+      "location": ["rural", "urban"],
+      "citizenship": "Indian citizen",
+      "poverty_status": [
+        "below poverty line household",
+        "destitute with little or no regular means of subsistence"
+      ],
+      "age_tiers": {
+        "tier_1": {
+          "min_age": 60,
+          "max_age": 79,
+          "base_central_pension_monthly": 200
+        },
+        "tier_2": {
+          "min_age": 80,
+          "max_age": null,
+          "base_central_pension_monthly": 500
+        }
+      },
+      "pension_range_with_state_contribution": {
+        "min_monthly_payout": 200,
+        "max_monthly_payout": 1000
+      }
+    },
+    "exclusion_triggers": {
+      "age_exclusion": "anyone under the age of 60",
+      "economic_exclusion": "households not classified under the below poverty line list",
+      "duplicate_benefit_exclusion": "individuals already receiving a pension or financial assistance from any other source"
+    }
+  },
+  "pm_kisan": {
+    "scheme_name": "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)",
+    "description": "An income support scheme that provides financial assistance to all cultivable landholding farmer families across the country to supplement agricultural inputs and domestic needs.",
+    "eligibility_triggers": {
+      "location": ["rural", "urban"],
+      "farmer_type": "all landholding farmers families",
+      "land_requirements": "must have cultivable land holding in their names, irrespective of the size of the land holding (no upper hectare limit)"
+    },
+    "exclusion_triggers": {
+      "institutional_land_holders": "any institutional land holder is excluded",
+      "political_or_constitutional_status": [
+        "former and present holders of constitutional posts",
+        "former and present ministers or state ministers",
+        "former and present members of lok sabha, rajya sabha, state legislative assemblies, or state legislative councils",
+        "former and present mayors of municipal corporations",
+        "former and present chairpersons of district panchayats"
+      ],
+      "employment_status_exclusion": "all serving or retired officers and employees of central or state government ministries, departments, field units, central or state pseas, attached offices, autonomous institutions, or regular employees of local bodies (excluding multi tasking staff, class iv, or group d employees)",
+      "pension_limit_monthly_above": 10000,
+      "pension_exclusion_exceptions": "multi tasking staff, class iv, and group d employees are exempt from the pension exclusion rule",
+      "taxpayer_status": "anyone who paid income tax in the last assessment year (or has a spouse/family member who paid income tax)",
+      "professional_status": [
+        "doctors",
+        "engineers",
+        "lawyers",
+        "chartered accountants",
+        "architects"
+      ]
+    }
+  },
+  "pm_ujjwala": {
+    "scheme_name": "Pradhan Mantri Ujjwala Yojana (PMUY - Ujjwala 2.0)",
+    "description": "A flagship scheme to make clean cooking fuel (LPG) available to poor and deprived households, replacing traditional health-detrimental cooking fuels like firewood and coal.",
+    "eligibility_triggers": {
+      "gender_restriction": "adult woman only",
+      "household_status": "must belong to a poor household without an existing active LPG connection",
+      "eligible_categories_any_one": [
+        "eligible as per secc 2011 list",
+        "belongs to sc or st households",
+        "beneficiary of pradhan mantri awas yojana (pmay)",
+        "beneficiary of antyodaya anna yojana (aay)",
+        "forest dwellers",
+        "most backward classes (mbc)",
+        "tea and ex-tea garden tribes",
+        "people residing in river islands",
+        "certified poor household via a signed 14 point declaration"
+      ],
+      "special_provisions": {
+        "migrant_families": "special documentation relaxation using self-declaration (Annexure I) to serve as proof of family composition and address"
+      }
+    },
+    "exclusion_triggers": {
+      "gender_exclusion": "male members from a household cannot apply",
+      "existing_connection_exclusion": "any household that already has an active lpg connection is excluded",
+      "age_exclusion": "minor women (under 18 years of age) are excluded"
+    }
+  },
+  "pmay_gramin": {
+    "scheme_name": "Pradhan Mantri Awaas Yojana - Gramin (PMAY-G)",
+    "description": "A flagship rural housing mission aimed at providing a pucca house with basic amenities to all houseless households and those living in kutcha or dilapidated houses in rural areas.",
+    "eligibility_triggers": {
+      "location": ["rural"],
+      "housing_status": "houseless households or households living in zero, one, or two-room houses with kutcha walls and kutcha roofs",
+      "compulsory_automatic_inclusion_criteria": [
+        "households without shelter",
+        "destitute or living on alms",
+        "manual scavengers",
+        "primitive tribal groups",
+        "legally released bonded laborer"
+      ],
+      "deprivation_scoring_parameters": [
+        "households with no adult member between ages 16 to 59",
+        "female headed households with no adult male member between ages 16 to 59",
+        "households with no literate adult above 25 years",
+        "households with any disabled member and no able bodied adult member",
+        "landless households deriving the major part of their income from manual casual labor"
+      ],
+      "tie_breaker_priority_groups": [
+        "households with widows and next of kin of members of defence, paramilitary, or police forces killed in action",
+        "households where a member is suffering from leprosy or cancer and people living with hiv",
+        "households with a single girl child",
+        "beneficiary families of the forest rights act 2006",
+        "transgender persons"
+      ],
+      "beneficiary_reservations": {
+        "sc_and_st_target_earmarked": "60%",
+        "minorities_national_fund_earmarked": "15%",
+        "state_disabled_beneficiary_target": "3%"
+      }
+    },
+    "exclusion_triggers": {
+      "housing_exclusion": "all households living in houses with pucca roofs and or pucca walls, or living in houses with more than 2 rooms",
+      "vehicles_owned": ["motorised two wheeler", "motorised three wheeler", "motorised four wheeler", "fishing boat"],
+      "equipment_owned": ["mechanised three wheeler agricultural equipment", "mechanised four wheeler agricultural equipment"],
+      "kisan_credit_card_limit_above": 50000,
+      "employment": ["government employee"],
+      "registered_enterprises": ["non agricultural enterprises registered with the government"],
+      "income_limit_monthly_above": 10000,
+      "tax_status": ["paying income tax", "paying professional tax"],
+      "assets_owned": ["refrigerator", "landline phone"],
+      "agricultural_land_exclusions": [
+        "owning 2.5 acres or more of irrigated land with at least one irrigation equipment",
+        "owning 5 acres or more of irrigated land for two or more crop seasons",
+        "owning at least 7.5 acres of land or more with at least one irrigation equipment"
+      ]
+    }
+  }
+
+}
