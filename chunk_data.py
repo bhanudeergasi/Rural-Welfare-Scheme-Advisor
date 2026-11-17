@@ -12,8 +12,7 @@ SECTION_HEADERS = [
 
 def get_scheme_id_from_filename(filename):
     """
-    Cleans up the filename to match our standard scheme IDs.
-    You might need to tweak this if your text file names differ significantly.
+    Cleans up the filename to match  standard scheme IDs.
     """
     base_name = os.path.splitext(filename)[0].lower()
     return base_name.replace("-", "_")
